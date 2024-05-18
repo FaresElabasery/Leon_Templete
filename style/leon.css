@@ -152,7 +152,7 @@ body {
 /* End Header */
 /* Start Landing Section */
 .landing {
-    height: 91.28vh;
+    height: calc(100vh - 64px); 
     background-image: url(../images/landing.jpg);
     background-size: cover;
     display: flex;
@@ -161,16 +161,17 @@ body {
 }
 
 .landing .intro-text {
-    width: 300px;
+    width: 320px;
     text-align: center;
     line-height: 58px;
+    max-width: 100%;    
 }
 
 .landing .intro-text h1 {
+    margin: 0;
     font-size: 50px;
     font-weight: 700;
     color: var(--main-color);
-    margin-bottom: 10px;
 }
 
 .landing .intro-text p {
