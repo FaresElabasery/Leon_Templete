@@ -1,7 +1,7 @@
 /* start variables rules */
 :root {
     --main-color: #10CAB7;
-    --secondary-color: #F6F6F6;
+    --section-background: #F6F6F6;
     --big-color-font: #EBECED;
     --third-color: #2C4755;
     --small-color-font: #797979;
@@ -29,7 +29,7 @@ body {
 /* end Global rules */
 /* start component  rules */
 .special-heading {
-    color: #f6f6f6;
+    color: var(--section-background);
     text-align: center;
     font-size: 100px;
     font-weight: 800;
@@ -54,7 +54,7 @@ body {
 }
 
 * ::selection {
-    background: #f6f6f6;
+    background: var(--section-background);
 }
 
 /* end component  rules */
@@ -147,7 +147,7 @@ body {
     right: 0;
     top: calc(100% + 15px);
     min-width: 200px;
-    background-color: #f6f6f6;
+    background-color: var(--section-background);
     display: none;
 }
 
@@ -161,7 +161,7 @@ body {
     border-style: solid;
     border-width: 10px;
     right: 5px;
-    border-color: transparent transparent #f6f6f6 transparent;
+    border-color: transparent transparent var(--section-background) transparent;
     top: -20px;
 }
 
@@ -217,7 +217,7 @@ body {
 
 /*  start feature Section */
 .feature {
-    background-color: #f6f6f6;
+    background-color: var(--section-background);
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -304,7 +304,7 @@ body {
     width: 100px;
     position: absolute;
     top: -50px;
-    background-color: #f6f6f6;
+    background-color: var(--section-background);
     height: calc(100% + 100px);
     right: 0;
     z-index: -1;
@@ -322,3 +322,46 @@ body {
 
 
 /*  End service Section */
+/* Start Portfolio */
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .special-heading {
+    color: #fff;
+}
+
+.portfolio .portfolio-content .card {
+    background-color: white;
+    border-radius: 2px;
+}
+
+.portfolio .portfolio-content .card img {
+    border-radius: 2px;
+    max-width: 100%;
+}
+
+.portfolio .portfolio-content .card .info {
+    padding: 20px;
+
+}
+
+.portfolio .portfolio-content .card .info h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.portfolio .portfolio-content .card .info p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
