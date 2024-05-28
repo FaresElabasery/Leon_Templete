@@ -1,7 +1,7 @@
 /* start variables rules */
 :root {
     --main-color: #10CAB7;
-    --secondary-color:#2c4755;
+    --secondary-color: #2c4755;
     --section-background: #F6F6F6;
     --big-color-font: #EBECED;
     --small-color-font: #797979;
@@ -319,6 +319,7 @@ body {
         display: none;
     }
 }
+
 @media (min-width: 1199px) {
     .services .services-content .col:nth-child(2) .srv:nth-child(2) {
         margin-top: 60px;
@@ -514,3 +515,19 @@ body {
 }
 
 /* End Contact section */
+
+/* start footer section */
+.footer {
+    background-color: var(--secondary-color);
+    padding: 30px 10px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+/* End footer section */
