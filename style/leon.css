@@ -136,7 +136,7 @@ body {
 
 .header .container .links .icon span:nth-child(2) {
     width: 60%;
-    transition: var(--duration,0.5s);
+    transition: var(--duration, 0.5s);
 }
 
 .header .container .links .icon span:last-child {
@@ -174,7 +174,7 @@ body {
     text-decoration: none;
     padding: 15px;
     display: block;
-    transition: var(--duration,0.5s);
+    transition: var(--duration, 0.5s);
     color: #333333;
 }
 
@@ -208,7 +208,7 @@ body {
     margin: 0;
     font-size: 50px;
     font-weight: 700;
-    color: var(--main-color,#10CAB7, #10CAB7);
+    color: var(--main-color, #10CAB7, #10CAB7);
 }
 
 .landing .intro-text p {
@@ -237,18 +237,44 @@ body {
 }
 
 .feature .container .feat i {
-    color: var(--main-color,#10CAB7);
+    color: var(--main-color, #10CAB7);
 }
 
 .feature .container .feat h3 {
     font-weight: 800;
-    margin: 30px 0;
+    margin: 30px 0 15px;
 }
 
 .feature .container .feat p {
-    font-size: 17px;
+    font-size: 17 px;
     line-height: 1.8;
     color: #797979
+}
+
+@media (max-width:991px) and (min-width:649px) {
+    .feature .container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .feature .container .feat {
+        padding: 0 15px;
+    }
+
+    .feature .container .feat i {
+        font-size: 30px;
+    }
+
+    .feature .container .feat h3 {
+        font-weight: 800;
+        margin: 25px 0 10px;
+        font-size: 18px;
+    }
+
+    .feature .container .feat p {
+        font-size: 13px;
+        line-height: 1.6;
+        color: #797979
+    }
 }
 
 /*  End feature Section */
@@ -260,8 +286,16 @@ body {
 }
 
 .services .services-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     margin-top: 100px;
+}
+
+.services .services-content .col:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
 }
 
 .services .services-content .srv {
@@ -274,10 +308,16 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
+    .services .services-content .col:first-of-type {
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 30px;
+    }
 }
 
 .services .services-content .srv i {
-    color: var(--main-color,#10CAB7);
+    color: var(--main-color, #10CAB7);
     flex-basis: 60px;
 }
 
@@ -286,7 +326,7 @@ body {
 }
 
 .services .services-content .srv .text h3 {
-    margin: 0 0 20px;
+    margin: 0 0 10px;
 }
 
 .services .services-content .srv .text p {
@@ -319,13 +359,13 @@ body {
     .image-column {
         display: none;
     }
-}
 
-@media (min-width: 1199px) {
-    .services .services-content .col:nth-child(2) .srv:nth-child(2) {
-        margin-top: 60px;
+    .services .services-content {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
+
 
 
 
@@ -341,6 +381,21 @@ body {
     grid-gap: 30px;
     margin-top: 80px;
 }
+
+@media (max-width:1200px) and (min-width:660px) {
+    .portfolio-content {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .portfolio .portfolio-content .card .info h3 {
+        font-size: 16px;
+    }
+
+    .portfolio .portfolio-content .card .info p {
+        font-size: 13px;
+    }
+}
+
 
 .portfolio .special-heading {
     color: #fff;
@@ -363,7 +418,7 @@ body {
 
 .portfolio .portfolio-content .card .info h3 {
     margin: 0;
-    margin-bottom: 10px;
+    margin: -5px 0px 5px;
 }
 
 .portfolio .portfolio-content .card .info p {
@@ -423,8 +478,8 @@ body {
     position: absolute;
     width: 120px;
     height: 300px;
-    border-left: 80px solid var(--main-color,#10CAB7);
-    border-bottom: 80px solid var(--main-color,#10CAB7);
+    border-left: 80px solid var(--main-color, #10CAB7);
+    border-bottom: 80px solid var(--main-color, #10CAB7);
     z-index: -1;
     right: -150px;
 }
@@ -454,7 +509,7 @@ body {
 .about .about-content .text hr {
     width: 50%;
     display: inline-block;
-    border-color: var(--main-color,#10CAB7);
+    border-color: var(--main-color, #10CAB7);
 }
 
 .about .about-content .text p:last-of-type {
@@ -470,9 +525,11 @@ body {
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
 }
+
 .contact .special-heading {
     color: #fff;
 }
+
 .contact .info {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -491,7 +548,7 @@ body {
     display: block;
     font-size: 35px;
     font-weight: 800;
-    color: var(--main-color,#10CAB7);
+    color: var(--main-color, #10CAB7);
     text-decoration: none;
 }
 
@@ -528,7 +585,7 @@ body {
 
 .footer span {
     font-weight: bold;
-    color: var(--main-color,#10CAB7);
+    color: var(--main-color, #10CAB7);
 }
 
 /* End footer section */
