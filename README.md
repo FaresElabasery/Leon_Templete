@@ -6,7 +6,6 @@ This is a basic HTML template for a website, featuring a responsive design and a
 
 * Responsive design for desktop, tablet, and mobile devices
 * Simple and clean layout with a header, footer, and main content area
-* Includes links to external stylesheets and fonts
 * Basic structure for a website with sections for services, portfolio, about, and contact
 
 ## Getting Started
