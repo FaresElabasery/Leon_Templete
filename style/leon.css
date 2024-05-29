@@ -306,7 +306,7 @@ body {
 
 .services .services-content .srv {
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
 
 @media (max-width: 767px) {
@@ -407,6 +407,7 @@ body {
 .portfolio .portfolio-content .card {
     background-color: white;
     border-radius: 2px;
+    margin-bottom: 16px;
 }
 
 .portfolio .portfolio-content .card img {
